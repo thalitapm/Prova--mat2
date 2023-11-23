@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Gerar Tabela para Cladograma</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-9ZfPnbegQSumzaE7mks2IYgHoayLtuto3AS6ieArECeaR8nCfliJVuLh/GaQ1gyM" crossorigin="anonymous">
+  <style>
+    /* Estilo da fonte */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    
+/* Barra de Navegação */
+.navbar {
+  background-color: #4CAF50; 
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Estilo da Barra de navegação: com cor de texto branca, alinhamento centralizado, espaçamento interno, sem decoração de texto e tamanho de fonte de 17 pixels.*/
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff; 
+  text-align:start;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Titulo Principal */
+.titulo {
+  color: #333; 
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Tabela */
+table {
+  font-family: 'Montserrat', Arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto; 
+}
+
+/* Cabeçalho da tabela */
+th, td {
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Define uma célula de cabeçalho na tabela */
+th {
+  background-color: #4CAF50; 
+  color: #fff; 
+  text-transform: uppercase; 
+}
+
+/* Define uma célula regular na tabela */
+td {
+  background-color: #f2f2f2; 
+}
+
+/* Explicação de como completar a tabela */
+.explicacao {
+  text-align: center;
+  border: 1px solid #4CAF50; 
+  padding: 10px;
+  margin: 20px auto;
+  width: 70%;
+}
+
+/* Botão */
+.botao {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Corpo da página */
+body {
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #f9f9f9;
+} 
+  </style>
+  <body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <ul class="navbar-nav ml-auto"></ul>
+      <a class="navbar-brand" href="#">Colégio Estadual Doutor Gastão Vidigal</a>
+    </nav>
+  
+    <!-- Título Principal -->
+    <h2 class="titulo">Tabela para criação do Cladograma</h2>
+
+    <!-- Explicação sobre a tabela do cladograma -->
+    <p class="explicacao">Um cladograma é um diagrama que representa as relações evolutivas entre diferentes espécies ou grupos de organismos. Ele mostra como essas espécies estão relacionadas entre si, com base em características compartilhadas.</p>
+    <p class="explicacao">Para que o cladograma seja montado, complete com "1" para as espécies que possuem e "0" para as espécies que não possuem as características.
+      Vamos lá :D
+    </p>
+  
+    <!-- Tabela -->
+    <table class="table">
+      <thead>
+        <!-- Cabeçalho da tabela -->
+        <tr>
+          <th>Espécies</th>
+          <th>Notocorda</th>
+          <th>Polegar Oponível</th>
+          <th>Glândulas Mamárias</th>
+          <th>Saco Amniótico</th>
+          <th>Mandíbula</th>
+          <th>Placenta</th>
+          <th>Patas Pareadas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Linhas da tabela -->
+        <tr>
+          <td>Canguru</td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+        </tr>
+        </tbody><tr>
+          <td>Lampreia</td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+        </tr>
+        <tr>
+          <td>Macaco Rhesus</td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+        </tr>
+        <tr>
+          <td>Rã Touro</td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+        </tr>
+        <tr>
+          <td>Humano</td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+        </tr>
+        <tr>
+          <td>Tartaruga</td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+        </tr>
+        <tr>
+          <td>Atum</td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+          <td><input type="number" class="form-control"></td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Botão para reiniciar a tabela -->
+    <div class="botao">
+      <button onclick="window.location.reload();" style="background-color: #4CAF50;">Reiniciar a tabela</button>
+    </div>
+    <!-- Scripts aqui -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
